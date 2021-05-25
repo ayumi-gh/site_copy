@@ -1,0 +1,281 @@
+/* メディアクエリ */
+/* PC表示 */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+html {
+    font-family: sans-serif;
+    line-height: 18px;
+    box-sizing: border-box;
+}
+
+body{
+    /* 文字サイズ・フォント */
+    font-family: "Noto Sans JP",MyYuGothicM,YuGothic,-apple-system,BlinkMacSystemFont,"Hiragino kaku Gothic ProN",Meiryo,Verdana,arial,helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* タブレット表示 */
+@media (max-width: 768px) {
+}
+
+/* スマホ表示 */
+@media (max-width: 768px) {
+}
+
+.l-container{
+    width: 100%;
+    max-width: 1900px;
+    background-image: url(../img/bg-hero1.png),url(../img/bg-hero2.png),url(../img/bg-hero3.png);
+    background-attachment: scroll, scroll, fixed;
+    background-size: auto;
+    background-position: center top 0%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+}
+
+.l-header{
+    background-color: #fff;
+    display: flex;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 50;
+}
+
+.l-header__head{
+    display: flex;
+    flex-grow: 1;
+    margin: 15px 0px 0px 20px;
+    line-height: 18px;
+}
+
+.l-header__text{
+    padding:5px 0px 0px 15px;
+    font-size: 0.9rem;
+}
+
+.l-header__text strong{
+    font-size: 1.1rem;
+}
+
+.l-header__body{
+    flex-grow: 1;
+    text-align: right;
+}
+
+/* ナビゲーションバー */
+nav ul {
+    font-size:0;
+}
+
+nav ul li{
+    display: inline-flex;
+    font-size:initial;
+}
+
+.c-accordion__item:last-of-type{
+    color: #fff ;
+    background-color: #2498b3;
+}
+
+.c-accordion__item a{
+    padding: 27px 15px;
+}
+
+.second-level__item a{
+    font-weight: lighter;
+    height: 60px;
+    width: 250px;
+}
+
+/* 階層　*/
+.c-accordion__list> li a:hover{
+    background-color:#D4F1F8;
+}
+
+.c-accordion__list > li:hover {
+    background: #fff;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.menu__second-level{
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.menu__second-level li a:hover {
+    background: #fff;
+    color: #2498b3;
+}
+
+/* floatクリア */
+/* .c-accordion__list:before,
+.c-accordion__list:after {
+    content: " ";
+    display: table;
+}
+
+.c-accordion__list:after {
+    clear: both;
+}
+
+.c-accordion__list {
+    *zoom: 1;
+} */
+/* end */
+
+.c-accordion__list > .c-accordion__item {
+    position: relative;
+}
+
+.c-accordion__item .menu__second-level{
+    position: absolute;
+    top: 70px;
+    width: 250px;
+    background: #EAF9FB;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.c-accordion__item:hover .menu__second-level {
+    top: 70px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.key_visual{
+    height: 875px;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.key_visual__content{
+    height: 325px;
+    width: 415px;
+    background-color: #fff;
+    border-radius : 10px ;
+    text-align: center;
+    margin: 150px auto 40px;
+    padding:40px 0px;
+}
+
+.key_visual__content p{
+    line-height: 25px;
+}
+
+.l-header__logo__big img{
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.btn__big a{
+    display: block;
+    height: 70px;
+    width: 290px;
+    background-color: #2498b3;
+    border-radius : 5px ;
+    margin:30px 60px;
+    padding:25px 30px;
+    color: #fff ;
+    font-size: 1.1rem;
+}
+
+.c-link_nostyle{
+    text-decoration: none;
+    color : inherit;
+}
+
+.key_visual__icon{
+    height: 370px;
+    width: 920px;
+    margin: 0 auto;
+    max-width: 1900px;
+    position: relative;
+    z-index: 10;
+}
+
+.key_visual__icon ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.key_visual__icon ul li p{
+    color: #fff ;
+    width: 230px;
+    line-height: 25px;
+}
+
+.key_visual__icon ul li div:nth-of-type(1){
+    height: 230px;
+    width: 230px;
+    border: 6px solid black;
+    border-radius: 200px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.icon-area i{
+    padding-top: 60px;
+}
+
+.key_visual__icon ul li p:nth-of-type(1){
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.bg_black{
+    position: absolute;
+    top: 720px;
+    height: 230px;
+    width: 100%;
+    background-color: black;
+    z-index: 0;
+}
+
+.slider_area{
+    position: absolute;
+    top: 950px;
+    height: 290px;
+    width: 100%;
+    background-color: #D4F1F8;
+    z-index: 0;
+}
+
+.tekkun__icon{
+    position: fixed;
+    height: 65px;
+    width: 65px;
+    right: 30px;
+    bottom: 50px;
+    z-index: 10;
+}
+
+.circle {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: #a2d729;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-o-border-radius: 50px;
+	-ms-border-radius: 50px; 
+	border-radius: 50px;
+}
+
+.ls_style_none{
+    list-style: none;
+}
